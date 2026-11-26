@@ -1,0 +1,12 @@
+pytest_file name: test_lab2pg038.py
+Pytest_program:
+from lab2pg038 import employee_details
+def test_employee_details():
+ result = employee_details("Vandana", "101", "BCA", "25000")
+ expected = (
+ "\nName: Vandana"
+ "\nEmployee ID: 101"
+ "\nDepartment: BCA"
+ "\nSalary: 25000"
+ )
+ assert result == expected
